@@ -32,7 +32,7 @@ const defaultMenu = {
 
 ╔━━━━━ *⊱𝐈𝐍𝐅𝐎 - 𝐁𝐎𝐓⊰*
 ✦  👤 *Cliente:* %name
-✦  🔱 *Modo:* Público
+✦  🔱 *Modo:* Privado Vip
 ✧  ✨ *Baileys:* Multi Device
 ✦  🪐 *Tiempo Activo:* %muptime
 ✧  💫 *Usuarios:* %totalreg 
