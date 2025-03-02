@@ -1,4 +1,4 @@
-/* Pack By WillZek 
+ /* Pack By WillZek 
 - Hecho Para Los Pajeros 
 - https://github.com/WillZek 
 */
@@ -27,6 +27,14 @@ conn.sendMessage(m.chat, {
             {
                 buttonId: `.pack`,
                 buttonText: { displayText: 'Siguiente' }
+            },
+            {
+                buttonId: '.vxxx',
+                buttonText: { displayText: 'Obtener Video' }
+            },
+            {
+                buttonId: '.tetas',
+                buttonText: { displayText: 'Tetas' }
             }
         ],
         viewOnce: true,
