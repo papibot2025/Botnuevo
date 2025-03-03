@@ -105,8 +105,8 @@ global.channelRD = await getRandomChannel()
 global.icono = [ 
 'https://i.ibb.co/mC7Sxtq0/file.jpg',
 'https://i.ibb.co/GQhXhGxb/file.jpg',
-'https://files.catbox.moe/155lf4.jpg',
-'https://files.catbox.moe/7zd92u.jpg',
+'https://i.ibb.co/HfZTnHzT/file.jpg',
+'https://i.ibb.co/1fdNDdKW/file.jpg',
 ].getRandom()
 
 global.urls = [
