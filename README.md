@@ -115,7 +115,7 @@ href="https://wa.me/50557865603?text="><img src="https://files.catbox.moe/44q2o7
 <details>
 <summary><b> 📞 Toca Aqui</b></summary>
 
-- **Propietario:** [`Aquí`](https:/Wa.me/50557865603)
+- **Propietario:** [`Aquí`](https:/Wa.me/5212731590195)
 - **Github:** [`Aqui`](https://github.com/WillZek)
 - **Instagram:** [`Aqui`](https://www.instagram.com/pina_dzn)
 - **Correo:** [`Aqui`](ninopina10@gmail.com)
