@@ -128,7 +128,7 @@ href="https://wa.me/50557865603?text="><img src="https://files.catbox.moe/44q2o7
 ### **`🖤 TERMUX INFORMACIÓN`**
 
 > [!IMPORTANT]
-> **CrowBot No Recibe Mucho Mantenimiento En Termux**
+> **Sonic-ProMax No Recibe Mucho Mantenimiento En Termux**
 
 > [!TIP]
 > **Puedes Utilizar Servidores Para Instalar A Sonic-ProMax o Compra Tu [Token](https://crow-bot-dashboard.vercel.app/) En La Pagina Oficial De CrowBot!**
