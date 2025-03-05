@@ -5,7 +5,7 @@ handler.all = async function(m) {
 const chat = global.db.data.chats[m.chat];
 if (chat.isBaneed) return
 if (/^bot$/i.test(m.text)) {
-conn.reply(m.chat, `🌠 ¡Hola! Soy CrowBot, en que puedo ayudarte hoy?\n\n✰ Usa *.menu* para ver mis comandos.`, m, rcanal, )
+conn.reply(m.chat, `🌠 ¡Hola! Soy Sonic-ProMax, en que puedo ayudarte hoy?\n\n✰ Usa *.menu* para ver mis comandos.`, m, rcanal, )
 }
 /*if (/^que|q$/i.test(m.text)) {
 conn.reply(m.chat, `*so*`, m, rcanal, )
@@ -19,7 +19,7 @@ conn.reply(m.chat, `*No digas mamadas, Meriyein*`, m, rcanal, )
 }
 
 if (/^porno|gore/i.test(m.text)) {
-conn.reply(m.chat, `*Escucha maldita sabandija ni se te ocurra enviar ese tipo de contenido 🤬*`, m, rcanal, )
+conn.reply(m.chat, `*el Willzek en 4 que rico 🥵*`, m, rcanal, )
 }
 
 if (/^Bot Perzonalizado Simple/i.test(m.text)) {
