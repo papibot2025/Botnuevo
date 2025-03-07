@@ -18,7 +18,7 @@ let json = await response.json();
 
 m.react('🕑');
 let txt = `🔎 \`TIKTOK - SEARCH\`.`;
-    for (let i = 0; i < json.meta.length; i++) {
+      for (let i = 0; i < (5 <= json.meta.length ? 5 : json.meta.length); i++) {
     let meta = json.meta[i];
     txt += `\n\n`;
     txt += `✧ *Titulo:* ${meta.title}\n`
@@ -29,7 +29,23 @@ let txt = `🔎 \`TIKTOK - SEARCH\`.`;
      }
 
 m.react('🕒');
-conn.sendMessage(m.chat, { text: txt }, { quoted: fkontak });
+let metaa = json.meta[0];
+conn.sendMessage(m.chat, { 
+        text: txt, 
+        footer: dev, 
+        buttons: [
+            {
+                buttonId: `${usedPrefix}tiktok ${metaa.url}`,
+                buttonText: { displayText: 'Descargar Video' }
+            },
+            {
+                buttonId: `${usedPrefix}ttmp3 ${metaa.url}`,
+                buttonText: { displayText: 'Descargar Audio' }
+            }
+        ],
+        viewOnce: true,
+        headerType: 4
+    }, { quoted: m });
 m.react('✅');
 
 } catch (e) {
@@ -38,6 +54,8 @@ m.react('✖️');
  }
 };
 
+handler.help = ['tiktoksearch'];
+handler.tag = ['buscador'];
 handler.command = ['tiktoksearch', 'ttsearch'];
 
 export default handler;
