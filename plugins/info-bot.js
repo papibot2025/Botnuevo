@@ -40,7 +40,7 @@ Tenemos:
 }
 
 if (/^Bot en decadencia/i.test(m.text)) {
-conn.reply(m.chat, `*Tu Mamá we 🍆🥵*`, m, rcanal, )
+conn.reply(m.chat, `*Tu Mamá en 4 😋🥵*`, m, rcanal, )
 }
 
 if (/^Crow$/i.test(m.text)) {
