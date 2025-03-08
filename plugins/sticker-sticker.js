@@ -1,4 +1,3 @@
-
 import { sticker } from '../lib/sticker.js'
 //import uploadFile from '../lib/uploadFile.js'
 //import uploadImage from '../lib/uploadImage.js'
@@ -11,14 +10,14 @@ try {
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
 if (/webp|image|video/g.test(mime)) {
-if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply(`🎩 *¡El video no puede durar mas de 10 segundos!*`)
+if (/video/g.test(mime)) if ((q.msg || q).seconds > 10) return m.reply(`《★》El Vídeo Debe Durar Menos De *10 Segundos*`)
 let img = await q.download?.()
 
-if (!img) return conn.reply(m.chat, `${emojis} *_Y el video ?, intenta enviar primero imagen/video/gif y luego responde con el comando._*`, m, rcanal)
+if (!img) return conn.reply(m.chat, '《★》Por favor, envia un vídeo para hacer un sticker.', m, rcanal)
 
 let out
 try {
-stiker = await sticker(img, false, global.packsticker, global.authsticker)
+stiker = await sticker(img, false, global.authsticker, global.packsticker)
 } catch (e) {
 console.error(e)
 } finally {
@@ -32,7 +31,7 @@ stiker = await sticker(false, out, global.packsticker, global.authsticker)
 } else if (args[0]) {
 if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packsticker, global.authsticker)
 
-else return m.reply(`💫 El url es incorrecto`)
+else return m.reply(`《★》 El url es incorrecto`)
 
 }
 } catch (e) {
@@ -41,7 +40,7 @@ if (!stiker) stiker = e
 } finally {
 if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: '🎩𝐂𝐫𝐨𝐰𝐁𝐨𝐭 - 𝐒𝐭𝐢𝐜𝐤𝐞𝐫✨', body: `CrowBot - ST ${emojis}`, mediaType: 2, sourceUrl: grupo, thumbnail: icons}}}, { quoted: m })
 
-else return conn.reply(m.chat, `${emojis} *_La conversión ha fallado, intenta enviar primero imagen/video/gif y luego responde con el comando._*\n\n> ${emojis} ${publi} ${emojis}`, m, rcanal)
+else return conn.reply(m.chat, `《★》𝙍𝙚𝙨𝙥𝙤𝙣𝙙𝙚 𝘼 𝙐𝙣𝙖 𝙄𝙢𝙖𝙜𝙚𝙣/𝙫𝙞́𝙙𝙚𝙤/𝙜𝙞𝙛 𝙥𝙖𝙧𝙖 𝙘𝙧𝙚𝙖𝙧 𝙩𝙪 𝙨𝙩𝙞𝙘𝙠𝙚𝙧.`, m, rcanal)
 
 
 }}
@@ -53,4 +52,4 @@ handler.estrellas = 3;
 export default handler
 
 const isUrl = (text) => {
-return text.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)(jpe?g|gif|png)/, 'gi'))} 
+return text.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)(jpe?g|gif|png)/, 'gi'))}
