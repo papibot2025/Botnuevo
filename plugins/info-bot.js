@@ -19,7 +19,7 @@ conn.reply(m.chat, `*No digas mamadas, Meriyein*`, m, rcanal, )
 }
 
 if (/^porno|gore/i.test(m.text)) {
-conn.reply(m.chat, `*el Willzek en 4 que rico 🥵*`, m, rcanal, )
+conn.reply(m.chat, `*Lotex tetón el papá de tdos 😈*`, m, rcanal, )
 }
 
 if (/^Bot Perzonalizado Simple/i.test(m.text)) {
