@@ -23,7 +23,7 @@ ___
 
 ## 💛 **`C R O W - B O T`**    
 
-![Menú Principal](https://files.catbox.moe/v8q8y2.jpg)
+![Menú Principal](https://files.catbox.moe/hjl3b6.jpg)
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>   
 
