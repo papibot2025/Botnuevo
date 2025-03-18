@@ -174,7 +174,7 @@ npm start
 
 ### 🍭 `HOSTINGS INFORMACION`
 
-![Informacion](https://qu.ax/LgBRM.jpg)
+![Informacion](https://files.catbox.moe/aeat9u.jpg)
 
 <details>
  <summary><b> 🎩 𝗛𝗢𝗦𝗧𝗜𝗡𝗚𝗦 𝗗𝗘 𝗖𝗔𝗟𝗜𝗗𝗔𝗗</b></summary>
