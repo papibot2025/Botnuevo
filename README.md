@@ -180,7 +180,7 @@ npm start
  <summary><b> 🎩 𝗛𝗢𝗦𝗧𝗜𝗡𝗚𝗦 𝗗𝗘 𝗖𝗔𝗟𝗜𝗗𝗔𝗗</b></summary>
 
 ###  **`🍬 LUMINARY'S - HOSTING`**
-<a href="https://dash.masha-host.shop/home"><img src="https://files.catbox.moe/aeat9u.jpg" height="145px"></a>
+<a href="https://dash.masha-host.shop/home"><img src="https://qu.ax/aHudo.jpg" height="145px"></a>
 
 <details>
  <summary><b>🍂 Servidor Luminary's - Host</b></summary>
