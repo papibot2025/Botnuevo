@@ -57,7 +57,7 @@ ___
 
 ![Menu Secundario](https://files.catbox.moe/lq6fa1.jpg)
 
-> Enlaces Oficiales De CrowBot
+> Enlaces Oficiales De SonicBot 
 
 ### **`🔗 OBTEN LOS ENLACES`**
 
