@@ -21,7 +21,7 @@ ___
 ___
 
 
-## 💛 **`C R O W - B O T`**    
+## 💛 **`S O N I C - B O T`**    
 
 ![Menú Principal](https://files.catbox.moe/hjl3b6.jpg)
 
