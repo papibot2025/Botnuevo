@@ -64,7 +64,7 @@ let handler = async (m, { conn, text, args, setting }) => {
           externalAdReply: {
             title: "Resultados de búsqueda",
             body: "Veohentai",
-            thumbnail: imagen1,
+            thumbnailUrl: 'https://cdnmega.vercel.app/media/g9AigKiT@OETotGdzUs_b8c3c2bLWni-mmpaLdCac-2yA5UkCjm8',
             sourceUrl: redes,
             mediaType: 1,
             renderLargerThumbnail: true
