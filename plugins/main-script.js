@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 let handler = async (m, { conn, args }) => {
 try {
-let res = await fetch('https://api.github.com/repos/WillZek/CrowBot-ST')
+let res = await fetch('https://api.github.com/repos/Emanuel1273/SonicBot-MF')
 
 if (!res.ok) throw new Error('Error al obtener datos del repositorio')
 let json = await res.json()
