@@ -1,8 +1,5 @@
-import fg from 'api-dylux' 
-import fetch from 'node-fetch'
-import axios from 'axios'
 let handler = async (m, { conn, args, command, usedPrefix }) => {
-if (!args[0]) throw `
+if (!args[0]) return m.reply(`
 • 𝐒𝐂𝐑𝐈𝐌 •
 
 ⏱ 𝐇𝐎𝐑𝐀𝐑𝐈𝐎                       •
@@ -23,7 +20,7 @@ if (!args[0]) throw `
     🥷🏻 ┇ 
     🥷🏻 ┇
                  
-` 
+`) 
 }
 handler.help = ['scrim']
 handler.tags = ['freefire']
