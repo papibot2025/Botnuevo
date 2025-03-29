@@ -65,5 +65,5 @@ const handler = async (m, { conn, args }) => {
 };
 handler.help = ['cuadrilatero']
 handler.tags = ['freefire']
-handler.command = /^(cuadri|cuadrilatero)$/i;
+handler.command = /^(cuadri|cuadrilatero|cuadrilátero)$/i;
 export default handler;
