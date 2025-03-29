@@ -2,7 +2,7 @@ import fg from 'api-dylux'
 import fetch from 'node-fetch'
 import axios from 'axios'
 let handler = async (m, { conn, args, command, usedPrefix }) => {
-if (!args[0]) throw `
+if (!args[0]) return m.reply(`
 *16 𝐕𝐄𝐑𝐒𝐔𝐒 16*
 
 ⏱ 𝐇𝐎𝐑𝐀𝐑𝐈𝐎                  •
@@ -44,7 +44,7 @@ if (!args[0]) throw `
     🥷🏻 ┇ 
     🥷🏻 ┇
                  
-` 
+`) 
 }
 handler.help = ['16vs16']
 handler.tags = ['freefire']
