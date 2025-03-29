@@ -1,19 +1,16 @@
-// By WillZek Para CrowBot
-
-let handler = async(m, { conn }) => {
-
-let map = '> *Aquí Tienes 🍨*';
-let mimg = [ 
-'https://files.catbox.moe/l3rzl1.jpg',
-'https://files.catbox.moe/mthxrp.jpg',
-'https://files.catbox.moe/nejjwf.jpg',
-'https://files.catbox.moe/k0dlt8.jpg',
-'https://files.catbox.moe/0nwrcm.jpg',
-].getRandom()
-
-conn.sendMessage(m.chat, { image: { url: mimg }, caption: map }, { quoted: fkontak });
-}
-
-handler.command = ['mapa'];
-
-export default handler 
+let toM = a => '@' + a.split('@')[0]
+function handler(m, { groupMetadata }) {
+let ps = groupMetadata.participants.map(v => v.id)
+let a = ps.getRandom()
+let b
+do b = ps.getRandom()
+while (b === a)
+m.reply(`*${toM(a)},* _Busca la salita bebe que ya viene el vs_ 📌
+BOTBARBOZA-AI 🤖`, null, {
+mentions: [a, b]
+})}
+handler.help = ['donarsala']
+handler.tags = ['freefire']
+handler.command = ['donarsala', 'sala']
+handler.group = true 
+export default handler
