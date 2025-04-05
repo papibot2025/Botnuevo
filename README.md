@@ -156,7 +156,7 @@ apt update && apt upgrade && pkg install -y git nodejs ffmpeg imagemagick yarn
 ```
 
 ```bash
-git clone https://github.com/Emanuel1273/Orlando-castillo- && cd Orlando-castillo-
+git clone https://github.com/Emanuel1273/SonicBot-MF && cd SonicBot-MF
 ```
 
 ```bash
