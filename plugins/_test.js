@@ -15,6 +15,7 @@ moon += `☪︎ *Descripción:* ${force.snippet}\n`
 moon += `──── ･ ｡ﾟ☆: *.☽ .* :☆ﾟ. ────`
 
 conn.sendMessage(m.chat, { text: moon }, { quoted: m });
+}
 
 MF.command = ['yahoosearch', 'yahoos'];
 
