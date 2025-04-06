@@ -18,7 +18,7 @@ txt += `♫ Descargando Audio, Por Favor Espere.`;
 
 const ttdl = await tiktokdl(text);
 
-conn.sendFile(m.chat, pene, 'MoonForce.jpg', txt, m, null);
+m.reply(txt);
 
 await conn.sendMessage(m.chat, { audio: { url: ttdl.result.audio }, mimetype: 'audio/mpeg' }, { quoted: m });
 }
