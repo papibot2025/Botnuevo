@@ -1,3 +1,10 @@
+/*
+- By WillZek 
+- https://github.com/WillZek
+- 🌃 Moon Force Team
+- canal
+*/
+
 import fetch from 'node-fetch';
 
 let MF = async(m, { conn, args }) => {
