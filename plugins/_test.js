@@ -13,6 +13,7 @@ moon += `☪︎ *Título:* ${force.title}\n`
 moon += `☪︎ *Enlace:* ${force.link}\n\n`
 moon += `☪︎ *Descripción:* ${force.snippet}\n`
 moon += `──── ･ ｡ﾟ☆: *.☽ .* :☆ﾟ. ────`
+}
 
 conn.sendMessage(m.chat, { text: moon }, { quoted: m });
 }
