@@ -8,7 +8,7 @@ let apiInfo = await(await fetch(`https://delirius-apiofc.vercel.app/search/tikto
 
 let force = apiInfo.meta;
 
-let txt ``
+let txt = `\`𝚃𝙸𝙺𝚃𝙾𝙺 𝑋 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰\`\n\n`
 
 const ttdl = await tiktokdl(text);
 
