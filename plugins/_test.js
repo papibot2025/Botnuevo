@@ -23,7 +23,7 @@ m.reply(txt);
 await conn.sendMessage(m.chat, { audio: { url: ttdl.result.audio }, mimetype: 'audio/mpeg' }, { quoted: m });
 }
 
-MF.command = ['tiktokdl'];
+MF.command = ['tiktokdl', 'test'];
 
 export default MF;
 
