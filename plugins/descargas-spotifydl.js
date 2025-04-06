@@ -1,58 +1,34 @@
-/* 
-- Downloader Spotify By Izumi-kzx
-- https://whatsapp.com/channel/0029VaJxgcB0bIdvuOwKTM2Y
-- Y Modificado Por Pene
+/*
+- By WillZek 
+- https://github.com/WillZek
+- 🌃 Moon Force Team
+- https://whatsapp.com/channel/0029Vb4Dnh611ulGUbu7Xg1q
 */
+
+// SPOTIFY - DOWNLOADER 🌟
+
 import fetch from 'node-fetch';
 
-let handler = async (m, { conn, command, text, usedPrefix }) => {
-  if (!text) {
-    return conn.reply(
-      m.chat,
-      '[ ᰔᩚ ] Ingresa el nombre o enlace para buscar en *Spotify*.\n\n' + 
-      `Ejemplo:\n> *${usedPrefix + command}* https://open.spotify.com/track/123456789`,
-      m
-    );
-  }
+let MF = async (m, { conn, args, command, usedPrefix }) => {
 
-  await m.react('🕓');
+if (!args[0]) return m.reply(`🌙 INGRESE UN Link De Spotify\n> *Ejemplo:* ${usedPrefix + command} https://open.spotify.com/track/0jH15Y9z2EpwTWRQI11xbj`);
 
-  try {
-    const response = await fetch(`https://dark-core-api.vercel.app/api/download/spotify?key=api&url=${encodeURIComponent(text)}`);
-    const result = await response.json();
+let api = await (await fetch(`https://archive-ui.tanakadomp.biz.id/download/spotify?url=${args[0]}`)).json();
 
-    if (result.success) {
-      const { title, thumbnail, downloadLink } = result;
+let force = api.result.data;
+let imagen = force.image;
 
-      const mensaje = `🎵 *Título:* ${title}`;
+let moon = `\`𝚂𝙿𝙾𝚃𝙸𝙵𝚈 𝑋 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰\`.\n\n`
+moon += `☪︎ *Título:* ${force.title}\n`
+moon += `☪︎ *Artista:* ${force.artis}\n`
+moon += `☪︎ *Duración:* ${force.durasi}\n`
+moon += `───── ･ ｡ﾟ☆: *.☽ .* :☆ﾟ. ─────`;
 
-      await conn.sendFile(m.chat, thumbnail, 'cover.jpg', mensaje, m);
+conn.sendFile(m.chat, imagen, 'MoonForce.jpg', moon, m, null);
 
-await conn.sendMessage(m.chat, { audio: { url: downloadLink }, mimetype: 'audio/mpeg' }, { quoted: m });
+conn.sendMessage(m.chat, { audio: { url: force.download }, mimetype: 'audio/mpeg' }, { quoted: m });
+}
 
-      await m.react('✅');
-    } else {
-      await m.react('❌');
-      conn.reply(
-        m.chat,
-        '[ ᰔᩚ ] No se pudo obtener la música para este enlace o búsqueda.',
-        m
-      );
-    }
-  } catch (error) {
-    console.error(error);
-    await m.react('❌');
-    conn.reply(
-      m.chat,
-      '[ ᰔᩚ ] Ocurrió un error al procesar tu solicitud.',
-      m
-    );
-  }
-};
+MF.command = ['spotifydl', 'spdl'];
 
-handler.help = ['spotify *<url>*'];
-handler.tags = ['descargas'];
-handler.command = /^(spotifydl|spdl)$/i;
-handler.register = true;
-
-export default handler;
+export default MF;
