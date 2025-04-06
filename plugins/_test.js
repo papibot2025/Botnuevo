@@ -22,6 +22,7 @@ MF.command = ['tiktokdl'];
 export default MF;
 
 async function tiktokdl(url) {
-await (await fetch(`https://api.ssateam.my.id/api/tiktok?url=${text}&apikey=makangratis`)).json();
-return;
+let api = await (await fetch(`https://api.ssateam.my.id/api/tiktok?url=&apikey=makangratis`)).json();
+return api;
+}
 
