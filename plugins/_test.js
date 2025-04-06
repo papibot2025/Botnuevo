@@ -21,7 +21,7 @@ m.reply(txt);
 
 const ttdl = await tiktokdl(text);
 
-await conn.sendMessage(m.chat, { audio: { url: ttdl.result.audio }, mimetype: 'audio/mpeg' }, { quoted: m });
+conn.sendMessage(m.chat, { audio: { url: ttdl.result.audio }, mimetype: 'audio/mpeg' }, { quoted: m });
 m.react('✅');
 }
 
