@@ -2,7 +2,7 @@
 - By WillZek 
 - https://github.com/WillZek
 - 🌃 Moon Force Team
-- canal
+- https://whatsapp.com/channel/0029Vb4Dnh611ulGUbu7Xg1q
 */
 
 import fetch from 'node-fetch';
