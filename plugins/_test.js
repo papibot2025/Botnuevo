@@ -5,6 +5,8 @@
 - https://whatsapp.com/channel/0029Vb4Dnh611ulGUbu7Xg1q
 */
 
+// YAHOO SEARCH ✨
+
 import fetch from 'node-fetch';
 
 let MF = async(m, { conn, args }) => {
