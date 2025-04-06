@@ -14,7 +14,7 @@ const ttdl = await tiktokdl(text);
 
 conn.sendFile(m.chat, pene, 'MoonForce.jpg', txt, m, null);
 
-await conn.sendMessage(m.chat, { audio: { url: ttdl.video_no_watermark }, mimetype: 'audio/mpeg' }, { quoted: m });
+await conn.sendMessage(m.chat, { audio: { url: ttdl.result.audio }, mimetype: 'audio/mpeg' }, { quoted: m });
 }
 
 MF.command = ['tiktokdl'];
