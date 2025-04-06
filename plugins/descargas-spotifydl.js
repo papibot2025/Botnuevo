@@ -11,7 +11,7 @@ import fetch from 'node-fetch';
 
 let MF = async (m, { conn, args, command, usedPrefix }) => {
 
-if (!args[0]) return m.reply(`🌙 INGRESE UN Link De Spotify\n> *Ejemplo:* ${usedPrefix + command} https://open.spotify.com/track/0jH15Y9z2EpwTWRQI11xbj`);
+if (!args[0]) return m.reply(`🌙 Ingrese Un Link De Spotify\n> *Ejemplo:* ${usedPrefix + command} https://open.spotify.com/track/0jH15Y9z2EpwTWRQI11xbj`);
 
 let api = await (await fetch(`https://archive-ui.tanakadomp.biz.id/download/spotify?url=${args[0]}`)).json();
 
@@ -24,9 +24,11 @@ moon += `☪︎ *Artista:* ${force.artis}\n`
 moon += `☪︎ *Duración:* ${force.durasi}\n`
 moon += `───── ･ ｡ﾟ☆: *.☽ .* :☆ﾟ. ─────`;
 
+m.react('🕒');
 conn.sendFile(m.chat, imagen, 'MoonForce.jpg', moon, m, null);
 
 conn.sendMessage(m.chat, { audio: { url: force.download }, mimetype: 'audio/mpeg' }, { quoted: m });
+m.react('✅');
 }
 
 MF.command = ['spotifydl', 'spdl'];
