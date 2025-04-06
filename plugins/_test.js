@@ -6,4 +6,21 @@ if (!args[0]) return m.reply(`🌙 INGRESE UN Link De Spotify\n> *Ejemplo:* ${us
 
 let api = await (await fetch(`https://archive-ui.tanakadomp.biz.id/download/spotify?url=${args[0]}`)).json();
 
-let Spotify_Imagen = api.result.data.image
+let force = api.result.data;
+let Spotify_Imagen = force.image;
+
+let moon = `\`𝚂𝙿𝙾𝚃𝙸𝙵𝚈 𝑋 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰\`.\n\n`
+moon += `☪︎ *Título:* ${force.title}\n`
+moon += `☪︎ *Artista:* ${force.artis}\n`
+moon += `☪︎ *Duración:* ${force.durasi}\n`
+moon += `───── ･ ｡ﾟ☆: *.☽ .* :☆ﾟ. ─────`;
+
+conn.sendFile(m.chat, Spotify_Imagen, moon, m, m);
+
+conn.sendMessage(m.chat, { audio: { url: force.download }, { quoted: m });
+}
+
+MF.command = ['spotifydl', 'spdl'];
+
+export default MF;
+
