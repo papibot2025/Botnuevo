@@ -21,8 +21,8 @@ moon += `──── ･ ｡ﾟ☆: *.☽ .* :☆ﾟ. ────`
 
 conn.sendMessage(m.chat, { text: moon }, { quoted: m });
 
-} catch {
-m.reply('*Error En La Api*');
+} catch (e) {
+m.reply(`*Error En La Api*\n> ${e.message}`);
 m.react('✖️');
 }}
 
