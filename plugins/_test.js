@@ -8,7 +8,7 @@ try {
 let api = await (await fetch(`https://archive-ui.tanakadomp.biz.id/search/yahoosearch?q=${args[0]}`)).json();
 
 let moon = `\`𝚈𝙰𝙷𝙾𝙾 𝑋 𝚂𝙴𝙰𝚁𝙲𝙷\`.`
-for (let i = 0; i < (5 <= json.result.length ? 5 : json.result.length); i++) {
+for (let i = 0; i < (5 <= api.result.length ? 5 : api.result.length); i++) {
 
 let force = json.result[i];
 
