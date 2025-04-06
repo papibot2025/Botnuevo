@@ -10,7 +10,7 @@ let api = await (await fetch(`https://archive-ui.tanakadomp.biz.id/search/yahoos
 let moon = `\`𝚈𝙰𝙷𝙾𝙾 𝑋 𝚂𝙴𝙰𝚁𝙲𝙷\`.`
 for (let i = 0; i < (5 <= api.result.length ? 5 : api.result.length); i++) {
 
-let force = json.result[i];
+let force = api.result[i];
 
 moon += `\n\n`
 moon += `☪︎ *Título:* ${force.title}\n`
