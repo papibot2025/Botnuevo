@@ -16,11 +16,13 @@ txt += `☪︎ *Comentarios:* ${force.coment}\n`
 txt += `☪︎ *Compartidas:* ${force.share}\n>`
 txt += `♫ Descargando Audio, Por Favor Espere.`;
 
-const ttdl = await tiktokdl(text);
-
+m.react('🕒');
 m.reply(txt);
 
+const ttdl = await tiktokdl(text);
+
 await conn.sendMessage(m.chat, { audio: { url: ttdl.result.audio }, mimetype: 'audio/mpeg' }, { quoted: m });
+m.react('✅');
 }
 
 MF.command = ['tiktokdl', 'test'];
