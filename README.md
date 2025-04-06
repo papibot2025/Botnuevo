@@ -2,12 +2,6 @@
 
 > **`🪩 Versión Actual: 2.1.0`**  
 
-<a
-href="https://github.com/WillZek/CrowBot-ST/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/WillZek/CrowBot-ST?color=yellow&style=flat-square"></a>
-<a href="https://github.com/WillZek/CrowBot-ST/watchers"><img title="espectadores" src="https://img.shields.io/github/watchers/WillZek/CrowBot-ST?label=Espectadores&style=social"></a>
-
-</p>
-
 ___
 
 # **`📩 Donaciones`**
