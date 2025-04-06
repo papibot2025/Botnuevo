@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-let MF = async(m, { conn, args }) => {
+let MF = async(m, { conn, text }) => {
 
 if (!text) return conn.reply(m.chat, '🌃 Ingrese Un Link Para Descargarlo.', m);
 
