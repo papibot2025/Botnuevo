@@ -246,7 +246,7 @@ href="https://dash.hostingpy.shop/"><img src="https://files.catbox.moe/lr92z2.jp
 
 ## **`💛 𝘊𝘙𝘌𝘈𝘋𝘖𝘙`**
 <a
-href="https://github.com/WillZek"><img src="https://github.com/WillZek.png" width="130" height="130" alt="WillZek"/></a>
+href="https://github.com/WillZek"><img src="https://github.com/Emanuel1273.png" width="130" height="130" alt="WillZek"/></a>
 
 </details>
 
