@@ -15,6 +15,8 @@ if (!text) return conn.reply(m.chat, '🌃 Ingrese Un Link Para Descargarlo.', m
 
 let apiInfo = await(await fetch(`https://delirius-apiofc.vercel.app/search/tiktoksearch?query=${text}`)).json();
 
+  if (!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi.test(text)) return m.reply('✖️ Ingrese Un Link Válido');
+
 let force = apiInfo.meta[0];
 
 let txt = `\`𝚃𝙸𝙺𝚃𝙾𝙺 𝑋 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰\`\n\n`
