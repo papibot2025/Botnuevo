@@ -40,6 +40,6 @@ export default MF;
 
 async function tiktokdl(url) {
     let apiDownload = `https://api.ssateam.my.id/api/tiktok?url=${url}&apikey=makangratis`;
-    let response = await (await fetch(apiDownload)).json();
-    return response;
+    let res = await (await fetch(apiDownload)).json();
+    return res;
 }
