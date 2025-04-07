@@ -23,7 +23,7 @@ txt += `☪︎ *Duración:* ${force.duration}\n`
 txt += `☪︎ *Likes:* ${force.like}\n`
 txt += `☪︎ *Comentarios:* ${force.coment}\n`
 txt += `☪︎ *Compartidas:* ${force.share}\n> `
-txt += `♫ Descargando Audio, Por Favor Espere.`;
+txt += `♫ Descargando Video, Por Favor Espere.`;
 
 m.react('🕒');
 m.reply(txt);
