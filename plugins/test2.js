@@ -15,6 +15,7 @@ MF.command = ['fbdl', 'facebookdl'];
 
 export default MF;
 
-async function facebookdl(url);
+async function tiktokdl(url) {
 let moon = await(await fetch(`https://vapis.my.id/api/fbdl?url=${url}`)).json();
 return moon;
+}
