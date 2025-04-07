@@ -6,12 +6,12 @@ if (!args[0]) return m.reply(`🌃 Por Favor Ingrese El Link Junto Al Comando\n>
 
 let fbDL = await facebookdl(args[0]);
 
-let vid = fbDL.pene;
+let vid = fbDL.hd_url;
 
 conn.sendMessage(m.chat, { video: { url: vid }, mimetype: 'video/mp4' }, { quoted: m });
 }
 
-MF.command = ['fbdl', 'facebookdl'];
+MF.command = ['fbdl', 'facebookdl', 'test2'];
 
 export default MF;
 
