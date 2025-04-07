@@ -36,7 +36,7 @@ conn.sendMessage(m.chat, { video: { url: ttdl.result.video_no_watermark }, mimet
 m.react('✅');
 }
 
-MF.command = ['tiktokdl', 'test'];
+MF.command = ['tiktokdl', 'ttdl'];
 
 export default MF;
 
