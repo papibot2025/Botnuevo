@@ -1,3 +1,12 @@
+/*
+- By WillZek 
+- https://github.com/WillZek
+- 🌃 Moon Force Team
+- https://whatsapp.com/channel/0029Vb4Dnh611ulGUbu7Xg1q
+*/
+
+// TIKTOK - DOWNLOADER 📽️
+
 import fetch from 'node-fetch';
 
 let MF = async(m, { conn, text }) => {
