@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';  
- const handler = async (m, {conn, text, groupMetadata}) => { 
+
+let handler = async (m, {conn, text, groupMetadata}) => { 
    try {
     let _user = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender;
   let who; 
