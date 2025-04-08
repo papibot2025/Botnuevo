@@ -1,46 +1,17 @@
-/*
-- By WillZek 
-- https://github.com/WillZek
-- 🌃 Moon Force Team
-- https://whatsapp.com/channel/0029Vb4Dnh611ulGUbu7Xg1q
-*/
-
-// TIKTOK - DOWNLOADER 📽️
+// Google By WillZek >> https://github.com/WillZek
 
 import fetch from 'node-fetch';
 
-let MF = async(m, { conn, text }) => {
+let MF = async(m, { conn, usedPrefix, command, args }) => {
 
-if (!text) return conn.reply(m.chat, '🌃 Ingrese Un Link Para Descargarlo.', m);
+if (!args[0]) return m.reply('🌃 Ingrese Para Buscar En Google');
 
-let apiInfo = await(await fetch(`https://delirius-apiofc.vercel.app/search/tiktoksearch?query=${text}`)).json();
+let moon = args[0];
+let force = `https://api.siputzx.my.id/api/tools/ssweb?url=https://www.google.com/search?q=${moon}`;
 
-  if (!/(?:https:?\/{2})?(?:w{3}|vm|vt|t)?\.?tiktok.com\/([^\s&]+)/gi.test(text)) return m.reply('✖️ Ingrese Un Link Válido');
-
-let force = apiInfo.meta[0];
-
-let txt = `\`𝚃𝙸𝙺𝚃𝙾𝙺 𝑋 𝙳𝙴𝚂𝙲𝙰𝚁𝙶𝙰\`\n\n`
-txt += `☪︎ *Título:* ${force.title}\n`
-txt += `☪︎ *Duración:* ${force.duration}\n`
-txt += `☪︎ *Likes:* ${force.like}\n`
-txt += `☪︎ *Comentarios:* ${force.coment}\n`
-txt += `☪︎ *Compartidas:* ${force.share}\n\n> `
-txt += `♫ Descargando Video, Por Favor Espere.`;
-
-m.react('🕒');
-m.reply(txt);
-
-const ttdl = await tiktokdl(text);
-
-conn.sendMessage(m.chat, { video: { url: ttdl.result.video_no_watermark }, mimetype: 'video/mp4' }, { quoted: m });
-m.react('✅');
+conn.sendMessage(m.chat, { image: { url: force }, caption: `*Resultados De: ${moon}` }, { quoted: m });
 }
 
-MF.command = ['tiktokdl', 'ttdl'];
+MF.command = ['google'];
 
 export default MF;
-
-async function tiktokdl(url) {
-    let apiDownload = await (await fetch(`https://api.ssateam.my.id/api/tiktok?url=${url}&apikey=makangratis`)).json();
-    return apiDownload;
-}
