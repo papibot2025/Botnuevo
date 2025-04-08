@@ -12,7 +12,7 @@ import fetch from 'node-fetch';
      if (!m.mentionedJid.length) m.mentionedJid.push(m.sender); 
      const res = await fetch('https://nekos.life/api/kiss'); 
      const json = await res.json(); 
-     const {url} = json; 
+     const { url } = json; 
      const text2 = `💌 *⌈* 𝑪𝑨𝑹𝑻𝑨 𝑫𝑬 𝑨𝑴𝑶𝑹 *⌋* 💌
     
 𝑫𝑬: @${m.sender.split("@")[0]} 
