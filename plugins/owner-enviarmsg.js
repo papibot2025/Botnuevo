@@ -1,6 +1,6 @@
 // By: @elrebelde21
 
-import fs from 'fs';
+/* import fs from 'fs';
 import fetch from 'node-fetch';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -153,3 +153,4 @@ delete suggestionQueue[suggestionId];
 handler.command = ['sug', 'sugerencia', 'enviarmensaje', 'solicitud', 'enviarsolicitud'];
 
 export default handler;
+*/
