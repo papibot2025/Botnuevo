@@ -2,7 +2,7 @@ import PhoneNumber from 'awesome-phonenumber'
 import fetch from 'node-fetch'
 let handler = async (m, { conn }) => {
   let _pp = './media/menus/Menu.jpg'
-  let user = db.data.users[m.sender]
+  let user = global.db.data.users[m.sender]
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
     let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/novios.jpg')
     let { premium, level, diamond, exp, lastclaim, registered, regTime, age } = global.db.data.users[m.sender]
