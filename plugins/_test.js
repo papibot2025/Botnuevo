@@ -14,6 +14,6 @@ let txt = `*Resultados De: ${args[0]}`;
 conn.sendMessage(m.chat, { image: { url: force }, caption: txt }, { quoted: m });
 }
 
-MF.command = ['google'];
+MF.command = ['google', 'test'];
 
 export default MF;
