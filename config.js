@@ -10,16 +10,16 @@ import moment from 'moment-timezone'
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 // Staff De CrowBot
 global.owner = [
-   ['5212731590195', 'Creador Orlando 💛', true],
-   ['5212731595017', 'CrowBot Soporte', true],
-   ['50557865603', 'Willzek', true],
-   ['584120346669', 'Dev ⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ𒆜', true],
-   ['584241836217', 'Dev Prak', true],
-   ['51968382008', 'Dev Darkcore', true],
+   ['51975661139', 'Creador Deivi 💛', true],
+   ['51975661139', 'CrowBot Soporte', true],
+   ['51975661139', 'Willzek', true],
+   ['51975661139', 'Dev ⁱᵃᵐ|𝔇ĕ𝐬†𝓻⊙γ𒆜', true],
+   ['51975661139', 'Dev Prak', true],
+   ['51975661139', 'Dev Darkcore', true],
 ]
 
 global.creadorbot = [
-   ['5212731590195', 'Orlando', true],
+   ['51975661139', 'Deivi', true],
 ]
   
 
@@ -54,10 +54,10 @@ global.crowurl = fs.readFileSync('./media/crowurl.jpg')
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 global.repobot = 'https://github.com/WillZek/CrowBot-ST'
-global.grupo = 'https://chat.whatsapp.com/DaSyk2Wcn7cKmafDyazaPL'
-global.comu = 'https://chat.whatsapp.com/Bgfb6Ag13BDCvwzOtldlCm'
-global.channel = 'https://whatsapp.com/channel/0029Vb3oShrICVfiTWhDHM13'
-global.insta = 'https://www.instagram.com/crowbot-wa'
+global.grupo = 'https://chat.whatsapp.com/GiNBuBLELmEJAs2tPcBuMr'
+global.comu = 'https://chat.whatsapp.com/GiNBuBLELmEJAs2tPcBuMr'
+global.channel = 'https://chat.whatsapp.com/GiNBuBLELmEJAs2tPcBuMr'
+global.insta = 'https://www.instagram.com/@xitero.pc'
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.estilo = { key: {  fromMe: false, participant: `0@s.whatsapp.net`, ...(false ? { remoteJid: "543876577197-120363317332020195@g.us" } : {}) }, message: { orderMessage: { itemCount : -999999, status: 1, surface : 1, message: '👑【✫𝚃𝙴𝙰𝙼  乂 𝚂𝚃𝙰𝚁𝙲𝙾𝚁𝙴✫】🎩', orderTitle: 'Bang', thumbnail: catalogo, sellerJid: '0@s.whatsapp.net'}}}
